@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="570.0" styleClass="mentStyle" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InformationHistoryController">
+
+   <children>
+
+      <GridPane layoutX="61.0" layoutY="73.0" maxWidth="1.7976931348623157E308" prefHeight="460.0" prefWidth="454.0">
+
+         <columnConstraints>
+
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="230.0" minWidth="10.0" prefWidth="114.0" />
+
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.0" minWidth="10.0" prefWidth="343.0" />
+
+         </columnConstraints>
+
+         <rowConstraints>
+
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+
+         </rowConstraints>
+
+         <children>
+      
+                  <Label text="Select Patient:" textFill="#010a66">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+      
+                  <ChoiceBox fx:id="patients" prefWidth="400.0" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="15.0" right="10.0" />
+               </GridPane.margin></ChoiceBox>
+
+            <Label text="First Name:" textFill="#010a66" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+
+            <Label fx:id="firstField" textFill="#010a66" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+
+            <Label text="Last Name:" textFill="#010a66" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+
+            <Label fx:id="lastField" textFill="#010a66" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+
+            <Label text="Birthdate:" textFill="#010a66" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+
+            <Label fx:id="birthField" textFill="#010a66" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+
+            <Label text="Address:" textFill="#010a66" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+
+            <Label fx:id="addressField1" textFill="#010a66" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+
+            <Label fx:id="soc" textFill="#010a66" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+
+            <Label text="Sex:" textFill="#010a66" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+
+            <Label fx:id="sexChoice" textFill="#010a66" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+
+            <Label text="Phone Number:" textFill="#010a66" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+
+            <Label fx:id="phoneField" textFill="#010a66" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+            <Label text="SSN:" textFill="#010a66" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Diagnosis:" textFill="#010a66" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="diagnosis" textFill="#010a66" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="populateButton" mnemonicParsing="false" onAction="#populateFromSelection" text="Populate From Selected Patient" textFill="#010a66" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Button>
+      
+            <Label text="Date Modified:" textFill="#010a66" GridPane.rowIndex="10">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="dateModified" prefHeight="29.0" prefWidth="188.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="10">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </ChoiceBox>
+            <Button fx:id="dateChanged" alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#dateChange" text="Changed Date" textFill="#010a66" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="10">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Button>
+      
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#buttonClicked" text="Back" textFill="#010a66" GridPane.rowIndex="11">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Button>
+
+         </children>
+
+      </GridPane>
+
+            <Label layoutX="124.0" layoutY="29.0" text="Patient Information History" textFill="#010a66">
+         <font>
+            <Font name="Georgia" size="26.0" />
+         </font>
+      </Label>
+
+   </children>
+
+</AnchorPane>
